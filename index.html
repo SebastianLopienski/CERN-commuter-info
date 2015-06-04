@@ -2,7 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>CERN commuters' info</title>
+	<title>MorningCERN</title>
+
+	<meta name="description" content="Handy info for commuters from Pays de Gex to CERN">
+	<meta name="author" content="Sebastian Lopienski">
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	
@@ -11,40 +14,41 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		
-<!-- From http://www.favicon-generator.org/	-->
-<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-<link rel="manifest" href="icons/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">	
+	<!-- From http://www.favicon-generator.org/	-->
+	<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+	<link rel="manifest" href="icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
     <style type="text/css">
-      html, body { 
-      	height: 100%;  
-      	padding: 0px;
-        text-align: center;
-      	
-      } 
-      #map-canvas { 
-        height: 200px;       	
-	  } 
-      .section {
-      	margin-bottom: 5px; 
-      	padding-bottom: 5px; 
-      	border-bottom: 1px solid #990000 
-      }
+	html, body {
+		height: 100%;
+		padding: 0px;
+		text-align: center;
+	}
+	#map-canvas {
+		height: 200px;
+	}
+	.section {
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #990000;
+		font-size: 80%;
+		font-family: Verdana, Geneva, sans-serif;
+	}
     </style>
         
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKpF_SVYKYwBcHXVPaWFIv62QoeUF98oQ">
@@ -92,7 +96,7 @@ TODO:
 	<div class="section"><iframe src="https://www.meteoblue.com/en/weather/widget/daily/thoiry_france_2972774?days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&pictoicon=1&maxtemperature=1&mintemperature=1&precipitation=1&precipitationprobability=1&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" style="width: 270px;height: 250px"></iframe></div>
 
 	<!-- Weather from m.yr.no -->
-	<div class="section"><iframe id="meteo" style="border: 0" src="http://m.yr.no/place/France/Rh%C3%B4ne-Alpes/Thoiry/hour_by_hour.html" width="320" height="500"></iframe><div>
+	<div class="section"><iframe id="meteo" style="border: 0" src="http://m.yr.no/place/France/Rh%C3%B4ne-Alpes/Thoiry/hour_by_hour.html" width="320" height="500"></iframe></div>
 	
 	<script>
 		/* if it's after 6pm, show the forecast for tomorrow */
@@ -101,7 +105,10 @@ TODO:
 		}
 	</script>
 		
-	<!-- ---------------------------------------------------- -->
+	<!-- Footer -->
+	<div class="section">
+	Feedback or comments? <a href="mailto:Sebastian.Lopienski?subject=CERN%20commuters%20info">Sebastian.Lopienski@cern.ch</a>
+	</div>
 
 </body>
 </html>
