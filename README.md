@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/SebastianLopienski/CERN-commuter-info.svg?branch=master)](https://travis-ci.org/SebastianLopienski/CERN-commuter-info)
+
 # CERN commuters' info
 
 Handy info for commuters from Pays de Gex to CERN - live at http://cern.ch/test-commuters-info/
