@@ -6,4 +6,4 @@ Handy info for commuters from Pays de Gex to CERN - live at http://cern.ch/test-
 
 Feedback or comments? Mail me at Sebastian.Lopienski@cern.ch
 
-NOTE: `index.html` uses my Google Maps API key, which works for all referers (pages) matching \*.cern.ch/\*. If you want to use your key, generate it at https://console.developers.google.com/project
+NOTE: `index.html` uses my Google Maps API key, which works for all referers (pages) matching \*.cern.ch/\*. If you want to use your key (e.g. to host this page outside CERN), then generate it at https://console.developers.google.com/project
