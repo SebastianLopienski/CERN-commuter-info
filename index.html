@@ -51,6 +51,9 @@
 		font-family: Verdana, Geneva, sans-serif;
 		padding: 0px;
 	}
+	iframe {
+		border-width: 0px;
+	}
     </style>
         
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKpF_SVYKYwBcHXVPaWFIv62QoeUF98oQ">
@@ -92,13 +95,13 @@
     <div class="section"><div id="map-canvas"></div></div>
 		
 	<!-- Weather from forecast.io -->
-	<div class="section"><iframe id="forecast_embed" type="text/html" frameborder="0" height="205" width="400" src="http://forecast.io/embed/#lat=46.2356&amp;lon=6.02&amp;name=St.Genis&amp;units=ca"> </iframe></div>	
+	<div class="section"><iframe height="205" width="400" src="http://forecast.io/embed/#lat=46.2356&amp;lon=6.02&amp;name=St.Genis&amp;units=ca"> </iframe></div>
 	
 	<!-- Weather from meteoblue.com -->	
-	<div class="section"><iframe src="https://www.meteoblue.com/en/weather/widget/daily/thoiry_france_2972774?days=5&amp;tempunit=CELSIUS&amp;windunit=KILOMETER_PER_HOUR&amp;pictoicon=1&amp;maxtemperature=1&amp;mintemperature=1&amp;precipitation=1&amp;precipitationprobability=1&amp;layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" style="width: 270px;height: 250px"></iframe></div>
+	<div class="section"><iframe src="https://www.meteoblue.com/en/weather/widget/daily/thoiry_france_2972774?days=5&amp;tempunit=CELSIUS&amp;windunit=KILOMETER_PER_HOUR&amp;pictoicon=1&amp;maxtemperature=1&amp;mintemperature=1&amp;precipitation=1&amp;precipitationprobability=1&amp;layout=light" style="width: 270px;height: 250px"></iframe></div>
 
 	<!-- Weather from m.yr.no -->
-	<div class="section"><iframe id="meteo" style="border: 0" src="http://m.yr.no/place/France/Rh%C3%B4ne-Alpes/Thoiry/hour_by_hour.html" width="320" height="500"></iframe></div>
+	<div class="section"><iframe id="meteo" src="http://m.yr.no/place/France/Rh%C3%B4ne-Alpes/Thoiry/hour_by_hour.html" width="320" height="500"></iframe></div>
 	
 	<script>
 		/* if it's after 6pm, show the forecast for tomorrow */
