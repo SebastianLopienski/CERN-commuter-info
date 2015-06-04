@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CERN commuters' info</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		
+<!-- From http://www.favicon-generator.org/	-->
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">	
+
+    <style type="text/css">
+      html, body { 
+      	height: 100%;  
+      	padding: 0px;
+        text-align: center;
+      	
+      } 
+      #map-canvas { 
+        height: 200px;       	
+	  } 
+      .section {
+      	margin-bottom: 5px; 
+      	padding-bottom: 5px; 
+      	border-bottom: 1px solid #990000 
+      }
+    </style>
+        
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKpF_SVYKYwBcHXVPaWFIv62QoeUF98oQ">
+    </script>
+
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+			center: { lat: 46.2365, lng: 6.02},
+			zoom: 14,
+			zoomControl: false,
+			scaleControl: false,
+			scrollwheel: false,
+			disableDoubleClickZoom: true,
+			panControl: false,
+			draggable: false
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+            
+	  var trafficLayer = new google.maps.TrafficLayer();
+  		trafficLayer.setMap(map);            
+      }
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+	
+</head>
+
+<body>
+
+<!-- 
+TODO:
+* add reload button/functionality
+-->
+	
+	<!-- Road traffic -->
+    <div class="section"><div id="map-canvas"></div></div>
+		
+	<!-- Weather from forecast.io -->
+	<div class="section"><iframe id="forecast_embed" type="text/html" frameborder="0" height="205" width="400" src="http://forecast.io/embed/#lat=46.2356&lon=6.02&name=St.Genis&units=ca"> </iframe></div>	
+	
+	<!-- Weather from meteoblue.com -->	
+	<div class="section"><iframe src="https://www.meteoblue.com/en/weather/widget/daily/thoiry_france_2972774?days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&pictoicon=1&maxtemperature=1&mintemperature=1&precipitation=1&precipitationprobability=1&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" style="width: 270px;height: 250px"></iframe></div>
+
+	<!-- Weather from m.yr.no -->
+	<div class="section"><iframe id="meteo" style="border: 0" src="http://m.yr.no/place/France/Rh%C3%B4ne-Alpes/Thoiry/hour_by_hour.html" width="320" height="500"></iframe><div>
+	
+	<script>
+		/* if it's after 6pm, show the forecast for tomorrow */
+		if ((new Date()).getHours() >= 8) { 
+			document.getElementById("meteo").src = "http://m.yr.no/place/France/Rh%C3%B4ne-Alpes/Thoiry/hour_by_hour_tomorrow.html";
+		}
+	</script>
+		
+	<!-- ---------------------------------------------------- -->
+
+</body>
+</html>
