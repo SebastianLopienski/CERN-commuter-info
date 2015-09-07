@@ -6,6 +6,9 @@
 
 This is a planning for a single activity, taking place once a week.
 
+![alt text](https://github.com/SebastianLopienski/CERN-commuter-info/raw/master/img/single.png "Single activity planning")
+
+Steps:
 * Visit https://docs.google.com/spreadsheets/d/17hifZh1Hce_4VnrXTvIo33TxV1ufqv2s5ch8LvGBK2w/edit?usp=sharing
 * File -> Make a copy...
 * Give it a title, save where you want
@@ -22,6 +25,9 @@ This is a planning for a single activity, taking place once a week.
 
 This is a summary page, grouping together multiple activities (pulled from separate spreadsheets) and displaying schedules for the coming weeks (for the nearest activity days).
 
+![alt text](https://github.com/SebastianLopienski/CERN-commuter-info/raw/master/img/summary.png "Summary sheet")
+
+Steps:
 * Visit https://docs.google.com/spreadsheets/d/1pKrAYgClUvH3F2FGPDJH4mCBBaY544wWs58QbMxFS-w/edit?usp=sharing
 * File -> Make a copy...
 * Give it a title, save where you want
