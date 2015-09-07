@@ -42,7 +42,7 @@ Publish the summary sheet page:
 * Copy the URL
 
 Construct the URL your personal "commuter info" page:
-* The general template for embedding an iframe with `URL` is `http://test-commuters-info.web.cern.ch/test-commuters-info/index.html#URL`
-* For embedding Google Spreadsheets, use something like `http://test-commuters-info.web.cern.ch/test-commuters-info/index.html#https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXX/pubhtml?gid=YYYYYYYYYYY&single=true&chrome=false`
+* The general template for embedding an iframe with `URL` is `http://cern.ch/test-commuters-info/index.html#URL`
+* For embedding Google Spreadsheets, use something like `http://cern.ch/test-commuters-info/index.html#https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXX/pubhtml?gid=YYYYYYYYYYY&single=true&chrome=false`
 * Or best, use `http://test-commuters-info.web.cern.ch/test-commuters-info/index.html#` + the copied URL, without "widget" or "headers" arguments, but with `&single=true&chrome=false` at the end
 
