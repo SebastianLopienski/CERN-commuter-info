@@ -17,6 +17,7 @@ Steps:
   - starting from
   - names in "Total" box
   - names and comments in the planning
+  - dates of holidays (mark them e.g. in yellow)
 * Follow the instructions to enable automatic background colouring for cells with names
 * Share -> "anyone with the link can view"
 * Don't change anything else - or do so at your own risk
