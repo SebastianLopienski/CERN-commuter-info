@@ -9,7 +9,9 @@ This is a planning for a single activity, taking place once a week.
 ![alt text](https://github.com/SebastianLopienski/CERN-commuter-info/raw/master/img/single.png "Single activity planning")
 
 Steps:
-* Visit https://docs.google.com/spreadsheets/d/17hifZh1Hce_4VnrXTvIo33TxV1ufqv2s5ch8LvGBK2w/edit?usp=sharing
+* Open one of these templates:
+   - one column: https://docs.google.com/spreadsheets/d/17hifZh1Hce_4VnrXTvIo33TxV1ufqv2s5ch8LvGBK2w/edit?usp=sharing
+   - two columns (aller/retour): https://docs.google.com/spreadsheets/d/1tOKa8fZ5udxQnx8_h0iTKZrFabqDbC97HizQVmSdjk0/edit?usp=sharing
 * File -> Make a copy...
 * Give it a title, save where you want
 * Edit only the cells with red borders
